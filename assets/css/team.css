@@ -1,0 +1,289 @@
+/* ===== Shared Header & Footer Styles (Same as Archive) ===== */
+/* Header Styles */
+/* ===== Team Page Specific Styles ===== */
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  min-height: 70vh;
+}
+
+.team-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .team-hero {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
+}
+
+.hero-image {
+  max-width: 50%;
+  height: auto;
+  max-height: 80%;
+}
+
+.hero-title {
+  color: #3a001e;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    text-align: left;
+    font-size: 3rem;
+  }
+}
+
+/* Team Members Grid */
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+/* Flip Card Styles */
+.team-member-card {
+  width: 100%;
+  height: 350px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.team-member-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.card-front {
+  background-color: white;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.card-back {
+  background-image: url("/assets/images/logo bg.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transform: rotateY(180deg);
+  justify-content: center;
+  color: white;
+}
+
+.member-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  border: 3px solid #fecdb6;
+}
+
+.member-name {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.member-position {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.card-back .member-position {
+  color: #fecdb6;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.social-link {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+}
+
+/* Team Section Headings */
+.team-section {
+  margin: 3rem 0;
+}
+
+.team-group-title {
+  color: #3a001e;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.team-group-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #b81f5b;
+}
+
+@media (max-width: 767px) {
+  .team-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    max-height: 300px;
+  }
+
+  .team-members {
+    grid-template-columns: 1fr; 
+    padding: 0;
+  }
+
+  .team-member-card {
+    height: 300px;
+  }
+
+  .member-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .member-name {
+    font-size: 1rem;
+  }
+
+  .member-position {
+    font-size: 0.85rem;
+  }
+
+  .social-link {
+    font-size: 1.2rem;
+  }
+
+  .team-group-title {
+    font-size: 1.5rem;
+  }
+
+  .team-group-title::after {
+    width: 60px;
+    height: 2px;
+  }
+}
+
+@media (max-width: 767px) {
+  .team-members {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    padding: 0 0.5rem;
+  }
+
+  .team-member-card {
+    height: 220px;
+  }
+
+  .card-front, .card-back {
+    padding: 1rem;
+  }
+
+  .member-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+  }
+
+  .member-name {
+    font-size: 0.9rem;
+  }
+
+  .member-position {
+    font-size: 0.75rem;
+  }
+
+  .social-link {
+    font-size: 1rem;
+  }
+
+  .team-group-title {
+    font-size: 1.4rem;
+  }
+
+  .team-group-title::after {
+    width: 50px;
+    height: 2px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    max-height: 250px;
+  }
+
+  .team-container {
+    padding: 1rem;
+  }
+}
+.social-links {
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  overflow: hidden;
+  row-gap: 0.5rem;
+}
+
+.social-link {
+  font-size: 0.9rem;
+}

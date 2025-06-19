@@ -1,0 +1,142 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  color: #4a2c3a;
+  line-height: 1.6;
+}
+
+/* Space for header and footer */
+#header-placeholder,
+#footer-placeholder {
+  height: 80px;
+}
+
+/* Hero Section */
+.contact-hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  width: 800px;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background-image: url('/assets/images/contact-us.png'); /* Replace with real image */
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #461729;
+}
+
+/* Contact Form */
+.contact-section {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.contact-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ffc6d1;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #b81f5b;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #9a1a4d;
+}
+
+/* Responsive */
+/* Media Query Fix */
+@media (max-width: 768px) {
+  .contact-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-image {
+    width: 100% !important;
+    max-width: 320px;
+    height: 200px !important;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .form-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .form-heading h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .contact-section {
+    margin: 2rem auto;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+

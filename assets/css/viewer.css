@@ -1,0 +1,52 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+   overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Main container for the iframe */
+.viewer-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive iframe (FlipHTML5 embed) */
+.viewer-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+}
+
+.flipbook-container{
+  position:relative; 
+  width: 100vw;   
+  height: 90vh;   
+  overflow: hidden; 
+  background: #fff; 
+}
+
+.flipbook-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+

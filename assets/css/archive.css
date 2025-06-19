@@ -1,0 +1,263 @@
+/* Base Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff0f6;
+  color: #4a2c3a;
+}
+
+
+/* Archive Hero Section */
+.archive-hero {
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.hero-image {
+  width: 70%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.hero-title {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  color: #4a002e;
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 1px 1px 3px rgba(255,255,255,0.8);
+}
+
+/* Magazines Section */
+.magazines-section {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.section-title {
+  text-align: center;
+  color: #3b0a45;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+.magazines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+}
+
+.magazine-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 220px;
+}
+
+.magazine-image-container {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.magazine-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.magazine-image-container:hover .magazine-image {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+
+.view-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: #6a0451;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.magazine-image-container:hover .view-button {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.magazine-volume {
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 800;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+.magazine-issue {
+  color: #6b7280;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+
+/* Quick Links Section */
+.quick-links-section {
+  max-width: 80rem;
+  margin: 3rem auto;
+  padding: 2rem 1rem;
+  background-color: #FECDB6;
+}
+
+.quick-links-title {
+  text-align: center;
+  color: #3B0A1E;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+.quick-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.quick-links-card {
+  background-color: #FECDB6;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.quick-links-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.card-author {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.card-button {
+  background-color: #B81F5B;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #9a1a4d;
+}
+
+/* Footer Space */
+.footer-space {
+  height: 100px;
+}
+
+@media (max-width: 767px) {
+  .archive-hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero-title {
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    text-align: right;
+  }
+
+  .section-title,
+  .quick-links-title {
+    font-size: 1.5rem;
+  }
+
+  .magazines-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .magazine-image-container {
+    height: 220px;
+  }
+
+  .magazine-volume {
+    font-size: 1rem;
+  }
+
+  .magazine-issue {
+    font-size: 0.8rem;
+  }
+
+  .quick-links-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card-image {
+    height: 160px;
+  }
+
+  .card-title {
+    font-size: 0.95rem;
+  }
+
+  .card-author {
+    font-size: 0.8rem;
+  }
+
+  .card-button {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
