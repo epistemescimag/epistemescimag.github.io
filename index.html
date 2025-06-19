@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Episteme - Science Magazine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Altasi&family=Montserrat:wght@700&family=Open+Sans&family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="assets\css\index.css" rel="stylesheet"/>
+  <link href="assets\css\header.css" rel="stylesheet"/>
+  <link href="assets\css\footer.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Main Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1>Episteme</h1>
+      <p>
+        Formally the IISER Berhampur Science magazine, and yet it is so much more than that. 
+        It is an exploration into the spirit of inquiry; for indeed, what is a researcher 
+        if not just a person who is curious.
+      </p>
+    </div>
+    <div class="animation-container">
+      <img alt="Science animation" class="rotated-gif" src="assets\images\logo animation..gif"/>
+    </div>
+  </section>
+
+
+<!-- Latest Issue Section -->
+<section class="latest-issue-section">
+  <div class="latest-issue-container">
+    <div class="issue-content">
+      <h2 class="issue-title">
+        Latest Issue
+        <span class="issue-volume">| Volume 3 Issue-I</span>
+      </h2>
+      <p class="issue-description">
+        Here are some of our striking articles from the latest edition.
+      </p>
+      <div class="articles-list">
+        <div class="article-item">
+          <h3 class="article-title">LAB INSIDER: Department of Biological Sciences</h3>
+          <p class="article-author">Dr. Arun Kumar Krishnan, Comparative Genomics Laboratory</p>
+        </div>
+        <div class="article-item">
+          <h3 class="article-title">Journey from self driving cars to LAWS and beyond</h3>
+          <p class="article-author">Aditya Aryan</p>
+        </div>
+        <div class="article-item">
+          <h3 class="article-title">A brief report on cellular origin of retroviral oncogenes</h3>
+          <p class="article-author">Pratyush Mishra</p>
+        </div>
+        <div class="article-item">
+          <h3 class="article-title">Hedy Lamarr:Inventor of vireless communication</h3>
+          <p class="article-author">Parvathy JP</p>
+        </div>
+        <div class="article-item">
+          <h3 class="article-title">Our Redhead Neighbour</h3>
+          <p class="article-author">Ronil Ranjan Jha</p>
+        </div>
+        <!-- More articles... -->
+      </div>
+    </div>
+    <div class="issue-cover" onclick="openPdf('volume3-issue1')">
+      <img alt="Magazine cover" class="cover-image" src="assets/images/episteme v3i1 cover.png"/>
+    
+    </div>
+  </div>
+</section>
+         
+
+  <!-- Previous Issues Section -->
+  <section class="previous-issues-section">
+    <div class="box">
+      <div class="card">
+        <div class="imgBx"  onclick="openPdf('special-special')">
+                <img src="https://i.ibb.co/W5cNjjQ/sp-ed-cover-page.png" alt="Vol1Iss1">
+                
+        </div>
+        <div class="details">
+            <h2>Special Release<br><span>Special Edition</span></h2>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="imgBx"  onclick="openPdf('volume2-issue2')"">
+                <img src="/assets/images/Epistime_V2I2 cover_page-0001.jpg" alt="images">
+                
+        </div>
+        <div class="details">
+            <h2>Volume 2<br><span>Issue 2</span></h2>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="imgBx"  onclick="openPdf('special-pride')"">
+                <img src="https://i.ibb.co/wQxTXP4/pride-ed-cover-page.png" alt="images">
+        
+        </div>
+        <div class="details">
+            <h2>Special Release<br><span>Pride edition</span></h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script src="assets\js\index.js"></script>
+<script src="assets\js\components\load-components.js"></script>
+</body>
+</html>
