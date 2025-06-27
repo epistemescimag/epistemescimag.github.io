@@ -1,6 +1,24 @@
 /* ===== Shared Header & Footer Styles (Same as Archive) ===== */
 /* Header Styles */
 /* ===== Team Page Specific Styles ===== */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff0f6;
+  color: #4a2c3a;
+}
+
+.hero-title {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  color: #4a002e;
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 1px 1px 3px rgba(255,255,255,0.8);
+}
+
 .team-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -8,13 +26,7 @@
   min-height: 70vh;
 }
 
-.team-hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
+
 
 @media (min-width: 768px) {
   .team-hero {
@@ -23,19 +35,18 @@
     gap: 5rem;
   }
 }
-
-.hero-image {
-  max-width: 50%;
-  height: auto;
-  max-height: 80%;
+.team-hero {
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 3rem 1rem;
 }
 
-.hero-title {
-  color: #3a001e;
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 600;
-  text-align: center;
+.hero-image {
+  width: 70%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
 @media (min-width: 768px) {
@@ -57,7 +68,7 @@
 .team-member-card {
   width: 100%;
   height: 350px;
-  perspective: 1000px;
+  perspective: 2000px;
 }
 
 .card-inner {
@@ -66,6 +77,7 @@
   height: 100%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+  transform-origin: center center;
 }
 
 .team-member-card:hover .card-inner {
@@ -74,8 +86,8 @@
 
 .card-front, .card-back {
   position: absolute;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   backface-visibility: hidden;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -83,6 +95,7 @@
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
+  box-sizing: border-box;
 }
 
 .card-front {
@@ -116,6 +129,7 @@
   font-weight: 600;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  
 }
 
 .member-position {
@@ -149,9 +163,9 @@
 }
 
 .team-group-title {
-  color: #3a001e;
-  font-size: 1.8rem;
-  font-weight: 600;
+  color: #3b0a45;
+  font-size: 2rem;
+  font-weight: 800;
   margin-bottom: 2rem;
   text-align: center;
   position: relative;
@@ -174,14 +188,15 @@
     padding: 1.5rem 1rem;
   }
 
-  .hero-title {
-    font-size: 2rem;
-    text-align: center;
+  .hero-image {
+    padding: 2rem 1rem;
   }
 
-  .hero-image {
-    max-width: 100%;
-    max-height: 300px;
+  .hero-title {
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    text-align: right;
   }
 
   .team-members {

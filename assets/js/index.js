@@ -57,7 +57,7 @@ if (submitButton) {
       window.open('https://example.com', '_blank');
     });
 
-// Social media links functionality
+// social media links functionality
 const socialIcons = document.querySelectorAll('.social-links i');
 socialIcons.forEach(icon => {
   icon.addEventListener('click', function() {

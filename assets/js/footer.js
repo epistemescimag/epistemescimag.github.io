@@ -1,4 +1,4 @@
-// Social media links functionality
+// social media links functionality
 document.querySelectorAll('.social-links i').forEach(icon => {
   icon.addEventListener('click', function() {
     const platform = this.classList.contains('fa-instagram') ? 'Instagram' :

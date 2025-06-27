@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   color: #000;
 }
 
@@ -27,7 +27,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   padding: 5rem 1.5rem;
   background: linear-gradient(135deg, #ffb997 0%, #d66dcb 50%, #5b5fef 100%);
   min-height: 70vh;
@@ -49,20 +49,20 @@ a:hover {
 h1 {
   font-family: 'Altasi', serif;
   font-weight: 800;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 42px;
+    font-size: 38px;
   }
 }
 
 .hero-content p {
-  font-weight: 300;
-  font-size: 25px;
+  font-weight: 200;
+  font-size: 26px;
   line-height: 1.5;
   max-width: 360px;
 }
@@ -80,6 +80,7 @@ h1 {
   object-fit: contain;
   border-radius: 0;
   display: block;
+  padding-left: 10rem;
 }
 
 /* Latest Issue Section */
@@ -88,6 +89,7 @@ h1 {
   padding: 10rem 1rem;
   display: flex;
   justify-content: center;
+  padding-left: 20rem;
 }
 
 .latest-issue-container {
@@ -97,6 +99,12 @@ h1 {
   align-items: flex-start; 
   gap: 3rem; 
   width: 100%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.latest-issue-container:hover .magazine-image {
+  transform: scale(1.05);
+  filter: brightness(0.7);
 }
 
 .issue-content {
@@ -112,6 +120,12 @@ h1 {
   top: 2rem; 
 }
 
+.issue-cover:hover .cover-image {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+
+
 .cover-image {
   width: 100%;
   max-width: 300px;
@@ -119,6 +133,7 @@ h1 {
   object-fit: cover;
   border-radius: 4px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 768px) {
@@ -324,6 +339,7 @@ body {
   .rotated-gif {
     width: 400px;
     height: auto;
+    padding-left: 0rem;
   }
 
   .latest-issue-section {
@@ -393,6 +409,7 @@ body {
     width: 250px;
     height: auto;
     margin: 0 auto;
+    padding-left: 0rem;
   }
 
   .latest-issue-section {
