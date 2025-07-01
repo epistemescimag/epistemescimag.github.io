@@ -137,6 +137,7 @@ h2, team-group-title {
   margin-bottom: 0.5rem;
   position: absolute;
   bottom: 4.5rem;
+  text-align: center;
 }
 
 .member-position {
@@ -144,6 +145,7 @@ h2, team-group-title {
   color: #6b7280;
   position: absolute;
   bottom: 2.25rem;
+  text-align: center;
 }
 
 .card-back .member-position {
