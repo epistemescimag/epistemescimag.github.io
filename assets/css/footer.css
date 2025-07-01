@@ -1,10 +1,20 @@
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   min-height: 50vh;
+
 }
+
+.site-footer .social-links,
+.site-footer .copyright,
+.site-footer .footer-logo {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400
+}
+
 
 .header {
   position: relative;
@@ -172,9 +182,9 @@ body {
 
 @media (max-width: 768px) {
   .footer-waves {
-    height: 50px;           /* Restore wave height */
-    top: auto;              /* Remove top positioning */
-    bottom: 1rem;              /* Stick to bottom */
-    transform: translateY(0); /* No offset */
+    height: 50px;          
+    top: auto;              
+    bottom: 1rem;             
+    transform: translateY(0); 
   }
 }

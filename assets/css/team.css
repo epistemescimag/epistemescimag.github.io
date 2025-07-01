@@ -2,13 +2,17 @@
 /* Header Styles */
 /* ===== Team Page Specific Styles ===== */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   background-color: #fff0f6;
   color: #4a2c3a;
 }
-
+h2, team-group-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
 .hero-title {
   position: absolute;
   top: 5rem;

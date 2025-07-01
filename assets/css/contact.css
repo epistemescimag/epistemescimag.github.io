@@ -6,11 +6,17 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   background-color: #fff0f6;
   color: #4a2c3a;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 /* Space for header and footer */
@@ -22,9 +28,10 @@ body {
 /* Hero Section */
 .contact-hero {
   position: relative;
-  max-width: 80rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 3rem 1rem;
+  left: -10rem;
 }
 
 .hero-image {
@@ -33,19 +40,20 @@ body {
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  background-image: url('/assets/images/contact-us.png'); /* Replace with real image */
+  background-image: url('/assets/images/contact-us.png');
   background-size: cover;
   background-position: center;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  left: -2rem;
 }
 
 .hero-title {
   position: absolute;
   top: 5rem;
-  right: 5rem;
+  right: -17rem;
   color: #4a002e;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
   text-shadow: 1px 1px 3px rgba(255,255,255,0.8);
 }
@@ -99,7 +107,7 @@ body {
 .form-container {
   display: flex;
   gap: 2rem;
-  align-items: stretch; /* Ensure both sides are same height */
+  align-items: stretch;
 }
 
 .image-placeholder {
@@ -149,6 +157,7 @@ body {
     align-items: center;
     text-align: center;
     padding: 1.5rem 1rem;
+    left: -1rem;
   }
 
   .hero-image {
@@ -158,8 +167,8 @@ body {
   }
 
   .hero-title {
-    top: 1rem;
-    right: 1rem;
+    top: -1.5rem;
+    right: -1rem;
     font-size: 2rem;
     text-align: right;
   }
