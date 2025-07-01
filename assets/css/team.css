@@ -144,7 +144,7 @@ h2, team-group-title {
   font-size: 0.9rem;
   color: #6b7280;
   position: absolute;
-  bottom: 1.75rem;
+  bottom: 2.25rem;
   text-align: center;
 }
 
@@ -230,6 +230,8 @@ h2, team-group-title {
 
   .member-position {
     font-size: 0.85rem;
+    position: absolute;
+    bottom: 1.75rem;
   }
 
   .social-link {
