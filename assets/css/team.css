@@ -205,13 +205,21 @@ h2, team-group-title {
     padding: 1.5rem 1rem;
   }
 
+  .team-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5.5rem 1rem 1.5rem 1rem;
+    left: -1rem;
+  }
+
   .hero-image {
     padding: 2rem 1rem;
   }
 
   .hero-title {
     top: 1rem;
-    right: 1rem;
+    right: 0.5rem;
     font-size: 2rem;
     text-align: right;
   }
@@ -294,11 +302,6 @@ h2, team-group-title {
   .team-group-title::after {
     width: 50px;
     height: 2px;
-  }
-
-  .hero-title {
-    font-size: 1.8rem;
-    text-align: center;
   }
 
   .hero-image {

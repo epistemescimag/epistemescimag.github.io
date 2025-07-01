@@ -213,11 +213,15 @@ h1, h2, h3 {
 @media (max-width: 767px) {
   .archive-hero {
     padding: 2rem 1rem;
+    align-items: center;
+    text-align: center;
+    padding: 5.5rem 1rem 1.5rem 1rem;
+    left: -1rem;
   }
 
   .hero-title {
-    top: 1rem;
-    right: 1rem;
+    top: 1.5rem;
+    right: 1.4rem;
     font-size: 2rem;
     text-align: right;
   }
