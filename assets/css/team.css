@@ -127,18 +127,23 @@ h2, team-group-title {
   object-fit: contain;
   margin-bottom: 1.5rem;
   border: 3px solid #fecdb6;
+  position: absolute;
+  top: 1rem;
 }
 
 .member-name {
   font-weight: 600;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  
+  position: absolute;
+  bottom: 4.5rem;
 }
 
 .member-position {
   font-size: 0.9rem;
   color: #6b7280;
+  position: absolute;
+  bottom: 2.25rem;
 }
 
 .card-back .member-position {
