@@ -9,6 +9,12 @@ body {
   background-color: #fff0f6;
   color: #4a2c3a;
 }
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
 h2, team-group-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -16,7 +22,7 @@ h2, team-group-title {
 .hero-title {
   position: absolute;
   top: 5rem;
-  right: 5rem;
+  right: 2rem;
   color: #4a002e;
   font-size: 3rem;
   font-weight: 800;

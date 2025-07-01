@@ -51,9 +51,9 @@ h1, h2 {
 .hero-title {
   position: absolute;
   top: 5rem;
-  right: -17rem;
+  right: -23rem;
   color: #4a002e;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 800;
   text-shadow: 1px 1px 3px rgba(255,255,255,0.8);
 }
